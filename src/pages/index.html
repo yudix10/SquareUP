@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>SquareUp | Home</title>
+</head>
+<body>
+@@include('_header.html')
+<main class="page-shell">
+  @@include('_hero-section.html')
+  @@include('_companies-section.html')
+  @@include('_banner.html', {
+    "type": "intro",
+    "id": "services",
+    "title": "Our Services",
+    "text": "Transform your brand with our innovative digital solutions that captivate and engage your audience."
+  })
+  @@include('_services-section.html')
+  @@include('_banner.html', {
+    "type": "middle",
+    "id": "why-us",
+    "title": "Why Choose SquareUp?",
+    "text": "Experience excellence in digital craftsmanship with our team of skilled professionals dedicated to delivering exceptional results."
+  })
+  @@include('_why-section.html')
+  @@include('_banner.html', {
+    "type": "middle",
+    "id": "clients",
+    "title": "What our Clients say About us",
+    "text": "At SquareUp, we take pride in delivering exceptional digital products and services that drive success for our clients. Here's what some of our satisfied clients have to say about their experience working with us."
+  })
+  @@include('_client-section.html')
+  @@include('_banner.html', {
+    "type": "intro",
+    "id": "faq",
+    "title": "Frequently Asked Questions",
+    "text": "Still you have any questions? Contact our Team via hello@squareup.com"
+  })
+  @@include('_faq-section.html')
+  @@include('_cta-section.html')
+</main>
+@@include('_footer.html')
+</body>
+</html>

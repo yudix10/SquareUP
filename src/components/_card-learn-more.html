@@ -1,0 +1,14 @@
+<article class="card-learn-more">
+  @@include('_icon.html', { "img": "@@img", "alt": "@@title icon" })
+  <div class="card-learn-more__content">
+    <div class="card-learn-more__text">
+      <h3 class="card-learn-more__title h3">@@title</h3>
+      <p class="card-learn-more__description">@@description</p>
+    </div>
+    @@include('_button.html', {
+      "title": "Learn More",
+      "link": "@@link",
+      "class": "card-learn-more__button button--grey"
+    })
+  </div>
+</article>

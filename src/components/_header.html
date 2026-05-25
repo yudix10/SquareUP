@@ -1,0 +1,25 @@
+<header class="header">
+  <div class="header__body">
+    <a class="header__logo" href="#home" aria-label="SquareUp home">
+      <img src="./assets/images/Logo.webp" alt="SquareUp logo" width="178" height="60">
+    </a>
+
+    <input class="header__toggle" id="menu-toggle" type="checkbox" aria-label="Open menu">
+    <label class="header__burger" for="menu-toggle" aria-hidden="true"><span></span></label>
+
+    <nav class="header__menu" aria-label="Main navigation">
+      <a class="menu-list__link is-active" href="#home">Home</a>
+      <a class="menu-list__link" href="#services">Services</a>
+      <a class="menu-list__link" href="#work">Work</a>
+      <a class="menu-list__link" href="#process">Process</a>
+      <a class="menu-list__link" href="#why-us">About</a>
+      <a class="menu-list__link" href="#faq">Careers</a>
+    </nav>
+
+    @@include('_button.html', {
+      "title": "Contact Us",
+      "link": "#contact",
+      "class": "header__button button--accent"
+    })
+  </div>
+</header>

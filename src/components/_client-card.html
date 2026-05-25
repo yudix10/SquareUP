@@ -1,0 +1,16 @@
+<article class="client-card">
+  <h3 class="client-card__title h4">@@title</h3>
+  <p class="client-card__description">@@description</p>
+  <div class="client-card-extra">
+    <img src="./assets/images/@@img.webp" alt="@@name" class="client-card__person-image" width="60" height="60">
+    <div class="client-card-extra__info">
+      <p class="client-card-extra__title">@@name</p>
+      <p class="client-card-extra__description">@@extraDesc</p>
+    </div>
+    @@include('_button.html', {
+      "title": "Open Website",
+      "link": "@@link",
+      "class": "card-client-extra__button button--grey"
+    })
+  </div>
+</article>
